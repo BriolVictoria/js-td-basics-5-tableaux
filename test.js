@@ -14,27 +14,17 @@
 // 8. Pour chaque facture, calculez le montant final payé en ajoutant le montant de la facture au montant du pourboire, puis ajoutez-le au tableau 'montantsFinaux'.
 // 9. Affichez les tableaux 'pourboires' et 'montantsFinaux' dans la console pour voir les résultats.
 
-const factures = [100, 74, 199]; //1
-const factures2 = [200, 50, 250];
+const factures = [100, 74, 199];
 
-function calculateurPourboire(factures) { //2
-    const pourboires = []; //4
-    const montantsFinaux = []; //5
-    for (const facture of factures) { //3
-        if (facture < 50) {
-            pourboires.push(facture * 0.20);
-        } else if (facture < 200) {
-            pourboires.push(facture * 0.15);
-        } else {
-            pourboires.push(facture * 0.10);
-        }
+function calculateurPourboire(factures) {
+    const pourboires =[]
+    const montantsFinaux =[]
+    if (factures < 50) {
+        pourboires.push = (factures / 20);
+    } else if (factures > 200) {
+        pourboires.push = (factures / 10);
+    } else {
+        pourboires.push = (factures / 15);
     }
-    for (let i = 0; i < factures.length; i++) {
-        montantsFinaux[i] = factures[i] + pourboires[i];
-    }
-    console.table(pourboires);
-    return montantsFinaux;
+       return pourboires;
 }
-
-console.table(calculateurPourboire(factures2));
-console.table(calculateurPourboire(factures));

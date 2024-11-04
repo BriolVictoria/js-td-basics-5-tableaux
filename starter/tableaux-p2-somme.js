@@ -16,7 +16,25 @@ Version alternative (avec BONUS) :
 */
 
 
+let nombres = [11, 3, 7, 2, 9, 10];
+
+console.log("Voici mon tableau de nombres :");
+console.table(nombres);
 
 
+console.log("La somme des nombres de mon tableau est …");
+
+let somme = 0;
+nombres.forEach(nombre => {
+    somme += nombre;
+    console.log(somme);
+})
+
+let somme2 = 0;
+
+for (const nombre of nombres) {
+    somme += nombre
+}
+console.log(somme2);
 
 

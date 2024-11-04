@@ -1,6 +1,6 @@
 /*****************************
-* 022 - Les tableaux indicés (Arrays)
-*/
+ * 022 - Les tableaux indicés (Arrays)
+ */
 
 
 // 8. Tableau à deux dimensions
@@ -12,19 +12,26 @@ Voici un exemple de tableau à deux dimensions (un tableau de tableaux),
 qui pourrait être utilisé comme tableau de positionnement des mines d'un jeu du démineur.
 */
 const mines = [[0, 1, 0, 1],
-             [1, 0, 0, 0], 
-             [1, 0, 1, 0], 
-             [0, 0, 0, 0]];
+    [1, 0, 0, 0],
+    [1, 0, 1, 0],
+    [0, 0, 0, 0]];
+
+
+for (let i = 0; i < mines.length /*4*/; i++) {
+    console.log(mines[i]);
+    for (let j = 0; j < mines[i].length; j++) {
+        console.log(mines[i][j]);
+    }
+}
+
 /* 
 EXERCICE :
 - évaluez chacune des expressions qui suivent
 - vérifiez votre réponse en affichant la valeur de l'expression dans la console
 */
-mines		// …………………………………………………………………
-mines[1]	// …………………………………………………………………
-mines[0][3] // …………………………………………………………………
-
-
+mines		// représente le tableaux
+mines[1]	// représente la deuxiéme ligne
+mines[0][3] // représente la quatriéme cellule de la premiére lignes
 
 
 // EXERCICE 7 :
@@ -32,9 +39,10 @@ mines[0][3] // ………………………………………………………�
 // Pour récupérer la valeur à la deuxième ligne troisième colonne du tableau,
 // utilisez les indices corrects (n'oubliez pas que les indices commencent à zéro).
 
-
+console.log(mines[1][2]);
 
 // Testez de la même manière l'emplacement situé en première ligne quatrième colonne
+
 
 
 // Etape 2 :
